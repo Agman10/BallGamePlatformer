@@ -19,6 +19,9 @@
 ## TODO
 * More optimization
 * Better AI
+* Change save system from playerprefs to json
+* Add checkpoints to level
+* Add a fairy that make you be able to ta a extra hit from enemies
 
 ## Additional info
 * Can quit the game whenever you want with U
