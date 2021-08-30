@@ -13,6 +13,11 @@ public class LevelEntryProgressDisplay : MonoBehaviour
     public GameObject secretGemCollected;
     public int levelID;
     public string secretGemColor;
+
+    public bool unlockableStage;
+    public int starsRequired;
+    public GameObject portalDisabled;
+    public GameObject portalEnabled;
     void Start()
     {
         if(star != null && starCollected != null && PlayerPrefs.GetInt("Star" + levelID.ToString()) == 1)
@@ -30,6 +35,12 @@ public class LevelEntryProgressDisplay : MonoBehaviour
         {
             secretGem.SetActive(false);
             secretGemCollected.SetActive(true);
+        }
+
+        if(unlockableStage && portalDisabled != null && portalEnabled != null && PlayerPrefs.GetInt("StarsCollected") >= starsRequired)
+        {
+            portalDisabled.SetActive(false);
+            portalEnabled.SetActive(true);
         }
     }
 

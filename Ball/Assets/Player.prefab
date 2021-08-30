@@ -340,6 +340,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4cd1eea3-3bd8-4266-8629-16cf8b61dcb2
     m_ActionName: Player/ResetSave[/Keyboard/t]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1656048236950372192}
+        m_TargetAssemblyTypeName: PlayerInput, Assembly-CSharp
+        m_MethodName: OnQuitInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5b0de8be-727d-4f51-8c61-07f3e08ce923
+    m_ActionName: Player/QuitGame[/Keyboard/u]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -359,3 +375,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alive: 1
   rb: {fileID: 0}
+  sphereCollider: {fileID: 0}
+  meshRenderer: {fileID: 0}

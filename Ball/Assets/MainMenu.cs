@@ -32,4 +32,9 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("PlayerLives", startingLives);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

@@ -26,6 +26,7 @@ public class LevelExit : MonoBehaviour
             if (gameManager.collectedStar == true)
             {
                 PlayerPrefs.SetInt("Star" + gameManager.levelID.ToString(), 1);
+                PlayerPrefs.SetInt("StarsCollected", PlayerPrefs.GetInt("StarsCollected") +1);
 
             }
             if (gameManager.collectedWhiteGem == true)

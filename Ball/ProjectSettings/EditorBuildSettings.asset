@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/New folder/testtin.unity
     guid: 20533605f9800224ca1465e47f3a7191
   - enabled: 1
+    path: Assets/Scenes/New folder/2D_Stage2.unity
+    guid: 5a421157b83ff874e997516fb2404a3d
+  - enabled: 1
     path: Assets/Scenes/New folder/BossStage.unity
     guid: cea29ba7346abb440b9661276359aace
   m_configObjects: {}

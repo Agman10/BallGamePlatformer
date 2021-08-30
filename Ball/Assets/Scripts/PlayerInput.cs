@@ -32,4 +32,9 @@ public class PlayerInput : MonoBehaviour
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("PlayerLives", 10);
     }
+
+    public void OnQuitInput(InputAction.CallbackContext ctx)
+    {
+        Application.Quit();
+    }
 }

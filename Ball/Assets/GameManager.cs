@@ -160,6 +160,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            PlayerPrefs.SetInt("CoinCount", 0);
             SceneManager.LoadScene(1);
         }
         yield return null;
