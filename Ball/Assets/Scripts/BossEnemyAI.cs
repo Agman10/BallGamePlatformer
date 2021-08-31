@@ -74,7 +74,7 @@ public class BossEnemyAI : MonoBehaviour
         {
             navigator.SetDestination(RandomNavmeshLocation(pos, 25f));
 
-            rb.velocity = transform.forward * speed * Time.deltaTime;
+            //rb.velocity = transform.forward * speed * Time.deltaTime;
 
             changeDirTime = UnityEngine.Random.Range(0.8f, 1.3f);
             

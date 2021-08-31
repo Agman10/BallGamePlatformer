@@ -7,7 +7,7 @@ public class BossStateIdle : AIBaseState
     //public BossStateChase chaseState;
     public override void EnterState(BossEnemyAI ai)
     {
-        ai.navigator.speed = 0.1F;
+        ai.navigator.speed = 3F;
         ai.navigator.acceleration = 100;
         ai.navigator.angularSpeed = 520;
 

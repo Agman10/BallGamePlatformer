@@ -11,7 +11,7 @@ public class BossStateChase : AIBaseState
         ai.navigator.acceleration = 8;
         ai.navigator.angularSpeed = 120;*/
 
-        ai.navigator.speed = 0.1f;
+        ai.navigator.speed = 5f;
         ai.navigator.acceleration = 100;
         ai.navigator.angularSpeed = 520;
     }
