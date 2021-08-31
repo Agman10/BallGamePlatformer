@@ -20,10 +20,10 @@ public class BossStateIdle : AIBaseState
     public override /*AIBaseState*/ void Update(BossEnemyAI ai)
     {
         ai.RoamAround();
-        Debug.Log("idle");
+        //Debug.Log("idle");
         if (Vector3.Distance(ai.transform.position, ai.target.position) < ai.sightRange)
         {
-            Debug.Log("idle end");
+            //Debug.Log("idle end");
             //ai.ChangeState(new BossStateChase());
             ai.ChangeState(ai.chaseState);
             //return chaseState;

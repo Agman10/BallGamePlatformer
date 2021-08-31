@@ -20,10 +20,10 @@ public class BossStateChase : AIBaseState
     {
         ai.Move();
         //ai.navigator.speed = 100;
-        Debug.Log("chase");
+        //Debug.Log("chase");
         if (Vector3.Distance(ai.transform.position, ai.target.position) > ai.sightRange)
         {
-            Debug.Log("chase end");
+            //Debug.Log("chase end");
             //ai.ChangeState(new BossStateIdle());
             ai.ChangeState(ai.idleState);
             //return idleState;

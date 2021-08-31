@@ -13,6 +13,8 @@ public class BossEnemyAI : MonoBehaviour
     public Transform pos;
 
     public Player player;
+    public float knockback = 1000;
+    public float heightKnockback = 1;
     
     public Rigidbody rb;
     public Transform target;
@@ -45,7 +47,7 @@ public class BossEnemyAI : MonoBehaviour
         currentState.Update(this);
         //transform.forward.z
         //Move();
-        Debug.Log(pos);
+        //Debug.Log(pos);
         /*AIBaseState returnState = currentState?.Update(this);
 
         if (returnState != currentState)
@@ -108,7 +110,7 @@ public class BossEnemyAI : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            player.Knockback(dir + new Vector3(0, 1, 0), 1000);
+            player.Knockback(dir + new Vector3(0, heightKnockback, 0), knockback);
             //Debug.Log(dir);
         }
     }
