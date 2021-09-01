@@ -23,8 +23,6 @@ public class BossStateIdle : AIBaseState
         //Debug.Log("idle");
         if (Vector3.Distance(ai.transform.position, ai.target.position) < ai.sightRange)
         {
-            //Debug.Log("idle end");
-            //ai.ChangeState(new BossStateChase());
             ai.ChangeState(ai.chaseState);
             //return chaseState;
             

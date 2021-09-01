@@ -23,14 +23,11 @@ public class BossStateChase : AIBaseState
         //Debug.Log("chase");
         if (Vector3.Distance(ai.transform.position, ai.target.position) > ai.sightRange)
         {
-            //Debug.Log("chase end");
-            //ai.ChangeState(new BossStateIdle());
             ai.ChangeState(ai.idleState);
             //return idleState;
         }
         if (Vector3.Distance(ai.transform.position, ai.target.position) < ai.closeRange)
         {
-            //ai.ChangeState(new BossStateIdle());
             ai.ChangeState(ai.chargeState);
             //return idleState;
         }

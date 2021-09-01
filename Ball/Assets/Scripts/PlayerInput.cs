@@ -29,8 +29,9 @@ public class PlayerInput : MonoBehaviour
 
     public void OnResetSaveInput(InputAction.CallbackContext ctx)
     {
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.SetInt("PlayerLives", 10);
+        /*PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("PlayerLives", 10);*/
+        Debug.Log("Delete save shortcut is disabled for now");
     }
 
     public void OnQuitInput(InputAction.CallbackContext ctx)

@@ -23,7 +23,7 @@ public class BossStateCharge : AIBaseState
         ai.Move();
 
 
-        //rhis away commentadet code is to make it  so the boss will charge at player when player is in front
+        //this away commentaded code is to make it  so the boss will charge at player when player is in front
 
         /*//float angel = Vector3.Angle(ai.target.forward, ai.transform.position - ai.target.position);
         float angel = Vector3.Angle(ai.transform.forward, ai.transform.position - ai.target.position);

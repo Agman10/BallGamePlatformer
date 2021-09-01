@@ -25,4 +25,4 @@
 
 ## Additional info
 * Can quit the game whenever you want with U
-* If you press T you will delete the save and get 10 lives (will take effect after restarting or dying but if you die you wont get 10 lives)
+* If you press T you will delete the save and get 10 lives (will take effect after restarting or dying but if you die you wont get 10 lives) (it is currently removed since i find it unnecesary right now might re-add it)

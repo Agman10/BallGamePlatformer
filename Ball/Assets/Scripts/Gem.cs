@@ -8,21 +8,6 @@ public class Gem : Pickup
     public GameManager gameManager;
     public bool secretGem;
 
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject, 0);
-            if(gemUI != null)
-            {
-                gemUI.SetActive(true);
-            }
-            if(gameManager != null)
-            {
-                gameManager.GemCollected(secretGem);
-            }
-        }
-    }*/
     public override void OnPickup()
     {
         base.OnPickup();

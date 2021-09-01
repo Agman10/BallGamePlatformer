@@ -5,18 +5,52 @@ using UnityEngine;
 public class EnemySlime : MonoBehaviour
 {
     private Rigidbody rb;
+    public GameObject model;
     public float speed;
-    // Start is called before the first frame update
+
+    public int directionID;
+    public Vector3 direction;
+    public float range;
+    public float friction;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = transform.forward * speed * Time.deltaTime;
+        Vector3 xzVelocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+        //rb.velocity = direction * speed * Time.deltaTime;
+        rb.AddForce(direction * speed * Time.deltaTime - (xzVelocity * friction * Time.deltaTime));
+        //rb.AddForce(-(xzVelocity * friction * Time.deltaTime));
+        model.transform.rotation = Quaternion.Slerp(model.transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * 10);
+    }
 
-        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 40f * Time.deltaTime);
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.layer == 0)
+        {
+            direction.x = -direction.x;
+            direction.z = -direction.z;
+            //Debug.Log("Collision");
+            /*if(direction.x == 1)
+            {
+                direction.x = -1;
+            }
+            else if(direction.x == -1)
+            {
+                direction.x = 1;
+            }
+            
+            if(direction.z == 1)
+            {
+                direction.z = -1;
+            }
+            else if (direction.z == -1)
+            {
+                direction.z = 1;
+            }*/
+
+
+        }
     }
 }
