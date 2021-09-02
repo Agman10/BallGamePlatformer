@@ -22,8 +22,9 @@ public class LevelExit : MonoBehaviour
             if (gameManager.collectedWhiteGem == true)
             {
                 PlayerPrefs.SetInt("WhiteGem" + gameManager.levelID.ToString(), 1);
+                PlayerPrefs.SetInt("WhiteGemsCollected", PlayerPrefs.GetInt("WhiteGemsCollected") + 1);
                 //Debug.Log(PlayerPrefs.GetKey("WhiteGem0"));
-                
+
             }
             if(gameManager.collectedSecretGem == true)
             {

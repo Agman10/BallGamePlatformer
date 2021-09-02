@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class PlayerInput : MonoBehaviour
 
     public void OnQuitInput(InputAction.CallbackContext ctx)
     {
-        Application.Quit();
+        //Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }

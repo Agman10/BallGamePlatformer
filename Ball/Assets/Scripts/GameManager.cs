@@ -12,15 +12,18 @@ public class GameManager : MonoBehaviour
     public int currentScene;
     //public Text coinText;
 
-    public GameObject whiteGem;
+    
     //public GameObject gemPos;
     public Player player;
     /*public GameObject statsObject;
     public Stats stats;*/
     public LifeManager lifeManager;
 
-    public GameObject secretGem;
+    
     public GameObject star;
+    public GameObject whiteGem;
+    public GameObject secretGem;
+    public GameObject GemReplacement;
 
     public bool collectedWhiteGem, collectedSecretGem, collectedStar;
     public int levelID;
@@ -128,11 +131,12 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                if (tombStone != null && torusUI != null)
+                if (tombStone != null && torusUI != null && player.skins != null)
                 {
                     torusUI.SetActive(true);
                     player.sphereCollider.enabled = false;
-                    player.meshRenderer.enabled = false;
+                    //player.meshRenderer.enabled = false;
+                    player.skins.SetActive(false);
                     tombStone.transform.position = player.transform.position;
                     //tombStone.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 1, player.transform.position.z);
                     tombStone.SetActive(true);
@@ -177,6 +181,9 @@ public class GameManager : MonoBehaviour
         {
             //Instantiate(gem, gemPos.transform.position, gem.transform.rotation);
             whiteGem.SetActive(true);
+        } else if (cratesCollected >= maxCrates && GemReplacement != null)
+        {
+            GemReplacement.SetActive(true);
         }
     }
 

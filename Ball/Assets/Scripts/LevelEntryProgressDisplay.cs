@@ -16,6 +16,7 @@ public class LevelEntryProgressDisplay : MonoBehaviour
 
     public bool unlockableStage;
     public int starsRequired;
+    public int whiteGemsRequired;
     public GameObject portalDisabled;
     public GameObject portalEnabled;
     void Start()
@@ -37,7 +38,7 @@ public class LevelEntryProgressDisplay : MonoBehaviour
             secretGemCollected.SetActive(true);
         }
 
-        if(unlockableStage && portalEnabled != null && PlayerPrefs.GetInt("StarsCollected") >= starsRequired)
+        if(unlockableStage && portalEnabled != null && PlayerPrefs.GetInt("StarsCollected") >= starsRequired && PlayerPrefs.GetInt("WhiteGemsCollected") >= whiteGemsRequired)
         {
             portalEnabled.SetActive(true);
             if (portalDisabled != null)

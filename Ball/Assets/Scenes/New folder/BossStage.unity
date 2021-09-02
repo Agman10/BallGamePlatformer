@@ -948,7 +948,7 @@ MonoBehaviour:
   crateText: {fileID: 1069924105}
   cratesCollected: 0
   maxCrates: 0
-  currentScene: 7
+  currentScene: 8
   whiteGem: {fileID: 0}
   player: {fileID: 1559148870}
   lifeManager: {fileID: 1200569010}
