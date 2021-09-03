@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     public GameObject iceCube;
     public GameObject iceCubeUI;
     public GameObject tombStone;
+    public GameObject smallSpheres;
 
     public bool angel;
 
@@ -141,6 +142,19 @@ public class GameManager : MonoBehaviour
                     //tombStone.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 1, player.transform.position.z);
                     tombStone.SetActive(true);
                 }
+            }
+        }
+        else if(id == 4)
+        {
+            if (smallSpheres != null && torusUI != null && player.skins != null)
+            {
+                torusUI.SetActive(true);
+                player.sphereCollider.enabled = false;
+                //player.meshRenderer.enabled = false;
+                player.skins.SetActive(false);
+                smallSpheres.transform.position = player.transform.position;
+                //tombStone.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 1, player.transform.position.z);
+                smallSpheres.SetActive(true);
             }
         }
         else

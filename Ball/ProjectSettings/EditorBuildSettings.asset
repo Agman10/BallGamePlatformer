@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New folder/BossStage.unity
     guid: cea29ba7346abb440b9661276359aace
+  - enabled: 1
+    path: Assets/Scenes/New folder/teststage2.unity
+    guid: 44e7654422c308b48bf530aea092dd51
   m_configObjects: {}

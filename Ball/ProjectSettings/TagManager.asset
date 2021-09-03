@@ -9,6 +9,7 @@ TagManager:
   - platform
   - obstacle
   - GameManager
+  - Explosion
   layers:
   - Default
   - TransparentFX

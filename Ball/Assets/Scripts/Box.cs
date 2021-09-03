@@ -8,10 +8,15 @@ public class Box : MonoBehaviour
     private GameManager gameManager;
     /*public bool hasParticles;
     private ParticleSystem particle;*/
+    private Rigidbody rb;
+    public GameObject model;
+    public GameObject destructionEffect;
+
 
     void Start()
     {
         gameManagerObject = GameObject.FindGameObjectWithTag("GameManager");
+        rb = GetComponent<Rigidbody>();
         if(gameManagerObject != null)
         {
             gameManager = gameManagerObject.GetComponent<GameManager>();
@@ -29,7 +34,41 @@ public class Box : MonoBehaviour
             {
                 particle.Play();
             }*/
-            Destroy(gameObject, 0);
+            if(model != null && destructionEffect != null)
+            {
+                
+                model.SetActive(false);
+                destructionEffect.SetActive(true);
+                rb.useGravity = false;
+                rb.constraints = RigidbodyConstraints.FreezeAll;
+                Destroy(gameObject, 0.2f);
+            } else
+            {
+                Destroy(gameObject, 0);
+            }
+            
+            
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Explosion") && gameManager != null)
+        {
+            gameManager.CrateUpdate();
+            if (model != null && destructionEffect != null)
+            {
+
+                model.SetActive(false);
+                destructionEffect.SetActive(true);
+                rb.useGravity = false;
+                rb.constraints = RigidbodyConstraints.FreezeAll;
+                Destroy(gameObject, 0.5f);
+            }
+            else
+            {
+                Destroy(gameObject, 0);
+            }
         }
     }
 }

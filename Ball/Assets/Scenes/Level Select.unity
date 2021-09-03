@@ -1302,7 +1302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1488656893875718323, guid: 422e022a808509b4196e346689c05775, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1488656894746497058, guid: 422e022a808509b4196e346689c05775, type: 3}
       propertyPath: m_IsActive
@@ -1322,7 +1322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1488656894787091229, guid: 422e022a808509b4196e346689c05775, type: 3}
       propertyPath: sceneIndex
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2491707687023348138, guid: 422e022a808509b4196e346689c05775, type: 3}
       propertyPath: m_RootOrder
@@ -1347,7 +1347,7 @@ PrefabInstance:
     - target: {fileID: 6690862759882145622, guid: 422e022a808509b4196e346689c05775, type: 3}
       propertyPath: portalDisabled
       value: 
-      objectReference: {fileID: 408436697}
+      objectReference: {fileID: 0}
     - target: {fileID: 6690862759882145622, guid: 422e022a808509b4196e346689c05775, type: 3}
       propertyPath: secretGemColor
       value: Pink
@@ -1710,7 +1710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &408436698
 Transform:
   m_ObjectHideFlags: 0
@@ -4128,11 +4128,12 @@ MonoBehaviour:
   cratesCollected: 0
   maxCrates: 0
   currentScene: 2
-  whiteGem: {fileID: 0}
   player: {fileID: 1559148870}
   lifeManager: {fileID: 2133680206}
-  secretGem: {fileID: 0}
   star: {fileID: 0}
+  whiteGem: {fileID: 0}
+  secretGem: {fileID: 0}
+  GemReplacement: {fileID: 0}
   collectedWhiteGem: 0
   collectedSecretGem: 0
   collectedStar: 0

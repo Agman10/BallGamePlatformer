@@ -6,7 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     private int lives;
     public int startingLives;
-    private int levelAmount = 5;
+    private int levelAmount = 6;
 
     public int skinSelected;
     public PlayerSkin playerSkins;
@@ -92,5 +92,6 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("SecretGemBlue", 1);
         PlayerPrefs.SetInt("SecretGemPurple", 1);
         PlayerPrefs.SetInt("SecretGemYellow", 1);
+        PlayerPrefs.SetInt("SecretGemPink", 1);
     }
 }
