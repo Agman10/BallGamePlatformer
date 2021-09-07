@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b2f671b3fe0ba46b2bdadb99853772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinSpeed: 0.3
+  spinSpeed: 50
   zSpeed: 0
   xSpeed: 0
 --- !u!1 &533406171163470379
@@ -599,7 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b2f671b3fe0ba46b2bdadb99853772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinSpeed: 0.3
+  spinSpeed: 50
   zSpeed: 0
   xSpeed: 0
 --- !u!1 &886528363602163808
@@ -1330,9 +1330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b2f671b3fe0ba46b2bdadb99853772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinSpeed: 0.3
+  spinSpeed: 50
   zSpeed: 0
-  xSpeed: 0.3
+  xSpeed: 50
 --- !u!1 &3267789170060193788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2376,6 +2376,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 907056748888565666}
     m_Modifications:
+    - target: {fileID: 1934521372301872883, guid: 0a4f749b11e458b4484fcd80ff86d0c9, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108031259981859979, guid: 0a4f749b11e458b4484fcd80ff86d0c9, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303464512989129359, guid: 0a4f749b11e458b4484fcd80ff86d0c9, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5007782315039216371, guid: 0a4f749b11e458b4484fcd80ff86d0c9, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -2445,6 +2457,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5007782315822263051, guid: 0a4f749b11e458b4484fcd80ff86d0c9, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075373231975563779, guid: 0a4f749b11e458b4484fcd80ff86d0c9, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807209469886124076, guid: 0a4f749b11e458b4484fcd80ff86d0c9, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567702069246994802, guid: 0a4f749b11e458b4484fcd80ff86d0c9, type: 3}
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}

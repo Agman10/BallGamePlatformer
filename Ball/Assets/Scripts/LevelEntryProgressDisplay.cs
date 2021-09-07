@@ -19,6 +19,9 @@ public class LevelEntryProgressDisplay : MonoBehaviour
     public int whiteGemsRequired;
     public GameObject portalDisabled;
     public GameObject portalEnabled;
+
+    public bool unlockableBySecretGem;
+    public string unlockableByColor;
     void Start()
     {
         if(star != null && starCollected != null && PlayerPrefs.GetInt("Star" + levelID.ToString()) == 1)
@@ -47,6 +50,15 @@ public class LevelEntryProgressDisplay : MonoBehaviour
             }
             
             
+        }
+
+        if (unlockableBySecretGem && PlayerPrefs.GetInt("SecretGem" + unlockableByColor.ToString()) == 1)
+        {
+            portalEnabled.SetActive(true);
+            if (portalDisabled != null)
+            {
+                portalDisabled.SetActive(false);
+            }
         }
     }
 }

@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New folder/teststage2.unity
     guid: 44e7654422c308b48bf530aea092dd51
+  - enabled: 1
+    path: Assets/Scenes/GemLevelSelect.unity
+    guid: 9f1ee881ede64bd439985ae8cd832e32
   m_configObjects: {}
